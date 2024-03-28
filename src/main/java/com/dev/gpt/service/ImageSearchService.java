@@ -32,7 +32,7 @@ public class ImageSearchService {
 	private ApplicationConfig applicationConfig;
 
 	public ResponseEntity<String> SendImageSearch() throws IOException {
-		String imagePath = "C:\\Users\\AHJ\\Desktop\\img\\img.png";
+		String imagePath = "";
 		String base64Image = encodeImage.encodeImage(imagePath);
 
 		HttpHeaders headers = new HttpHeaders();
