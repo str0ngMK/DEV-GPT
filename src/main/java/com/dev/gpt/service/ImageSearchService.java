@@ -36,7 +36,7 @@ public class ImageSearchService {
 		String base64Image = encodeImage.encodeImage(imagePath);
 
 		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
+		headers.setContentType(MediaType.APPLICATION_JSON); 
 		headers.set("Authorization", "Bearer " + applicationConfig.getApiKey());
 
 		HashMap<String, Object> body = body(base64Image);
